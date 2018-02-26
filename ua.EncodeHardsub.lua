@@ -333,6 +333,7 @@ function time2string(num)
 	timecode=math.floor(num/1000)
 	tc0=math.floor(timecode/3600)
 	tc1=math.floor(timecode/60)
+	tc1=tc1%60
 	tc2=timecode%60
 	numstr="00"..num
 	tc3=numstr:match("(%d%d)%d$")
